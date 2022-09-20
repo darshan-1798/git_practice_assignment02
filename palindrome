@@ -1,8 +1,16 @@
-function reverse(str){
+let str="naman";
+function reverse(){
   let bag="";
-for(let i=str.length-1;i>=1;i++){
+for(let i=str.length-1;i>=0;i--){
   bag+=str[i];
 }
-console.log(bag)
+return bag;
 }
-reverse("Darshan");
+reverse("str");
+
+let answer = reverse(str);
+if(answer==str){
+console.log(str, " is Palindrome");
+}else{
+console.log(str, "not a Palindrome");
+}
